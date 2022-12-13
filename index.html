@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>htmLOL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="memelogo.png">
+
+  <style>
+
+    body{
+      background-color: #121212;
+      background: url("thebg.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 1500px;
+    }
+
+    ::selection{
+      background-color: #743ad5;
+      color: whitesmoke;  
+    }
+
+    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .navbar, .footer{
+      background-color: #1e1e1e !important;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .navbar-brand{
+      font-weight: 600;
+    }
+
+    .navbar-item{
+      font-weight: 400;
+    }
+
+    .navbar-item{
+      color: #743ad5;
+    }
+    
+    .card-subtitle{
+      font-weight: 600;
+      font-size: 100%;
+      opacity: 70%;
+
+    }
+
+    .card{
+      background-color: #252526;
+      border-width: 4px;
+      color: whitesmoke;
+      font-family: 'Nunito', sans-serif;
+      border-image-slice: 1;
+
+      transition: 0.25s ease-in-out;
+    }
+
+    .card:hover{
+      border-color: #743ad5
+    }
+
+    .underline-effect {
+      display: inline-block;
+      position: relative;
+    }
+
+    .underline-effect:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #743ad5;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+      }
+
+      .underline-effect:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark unselectable">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-4" href="index.html">htmLOL</a>
+    <ul class="navbar-nav mx-4">
+      <li class="nav-item mx-4">
+        <a class="nav-link active underline-effect" href="index.html">CS Memes</a>
+      </li>
+      <li class="nav-item mx-4">
+        <a class="nav-link underline-effect" href="AcadMemes.html">Acad Memes</a>
+      </li>
+      <li class="nav-item mx-4">
+        <a class="nav-link underline-effect" href="MiscMemes.html">Misc Memes</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+
+      <div class="card mt-5">
+        <img class="card-img-top" alt="Image" src="csmeme1.png">
+        <div class="card-body">
+          I love you sir but I've been using absolute position out of desperation WHERE WAS BOOTSTRAP ALL THIS TIME
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <img class="card-img-top" alt="Image" src="csmeme2.png">
+        <div class="card-body">
+          If only I could actually use that robux... :(
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <img class="card-img-top" alt="Image" src="csmeme3.png">
+        <div class="card-body">
+          Either option looks horrible once you zoom out :(
+        </div>
+      </div>
+
+    </div>
+  
+    
+    <div class="col-sm-6">
+
+        <div class="card mt-5">
+          <img class="card-img-top" alt="Image" src="csmeme4.png">
+        <div class="card-body">
+          You can tell layout was my least favorite part of CS, huh?
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <a href="https://www.reddit.com/r/yandere_simulator_2/comments/i8cf6v/god_i_wish_there_was_an_easier_way_to_do_this/" target="_blank">
+          <img class="card-img-top" alt="Image" src="csmeme5.png">
+        </a>
+        <div class="card-body">
+          No wonder Yandere Simulator runs like a Powerpoint slide...
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <img class="card-img-top" alt="Image" src="csmeme6.png">
+        <div class="card-body">
+          Pedants in the chat are typing...
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center footer unselectable">
+  <p>Copyright © 2022 Audd Inc. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
